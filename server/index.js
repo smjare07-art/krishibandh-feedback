@@ -7,10 +7,8 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Atlas connect
-mongoose.connect("mongodb+srv://admin:Krishi@123@cluster0.fzzm2wu.mongodb.net/feedbackDB", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb+srv://admin:Krishi@123@cluster0.fzzm2wu.mongodb.net/feedbackDB");
+
 
 // Schema
 const Feedback = mongoose.model("Feedback", {
