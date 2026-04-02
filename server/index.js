@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// MongoDB Atlas connect
+// MongoDB Atlas connectmongoose.connect("mongodb+srv://admin:Krishi@123@cluster0.fzzm2wu.mongodb.net/feedbackDB");
 mongoose.connect("mongodb+srv://admin:Krishi@123@cluster0.fzzm2wu.mongodb.net/feedbackDB");
 
 
