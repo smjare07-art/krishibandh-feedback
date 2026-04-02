@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // ✅ Correct MongoDB URL (password encoded)
-mongoose.connect("mongodb+srv://admin:Krishi%40123@cluster0.fzzm2wu.mongodb.net/feedbackDB");
+mongoose.connect("mongodb+srv://admin:Krishi123@cluster0.fzzm2wu.mongodb.net/feedbackDB");
 
 // Schema
 const Feedback = mongoose.model("Feedback", {
